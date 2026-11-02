@@ -1,0 +1,882 @@
+[
+  {
+    "commit": "fbcf188e02e70e98f0f95fe9df0a1a202ccae842",
+    "date": "2026-02-06T16:22:15-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "9d0ca7d9eaf607ae4a22b97522d50fef6d9f9331",
+    "date": "2026-02-07T11:32:50-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "b389b80ef9c7a7632b31a85ea66677d2ba25d1d9",
+    "date": "2026-02-07T11:34:29-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "7ea5a175c78fa0ab682c31502d6ee302dd12958c",
+    "date": "2026-02-07T12:49:45-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "76dbfecbc67a4f1f5eea06bc51784bc7e66f3c0c",
+    "date": "2026-02-07T15:04:33-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "2b7555ebbbe11a01deeee878e90d85c16aa23037",
+    "date": "2026-02-07T17:09:51-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "7417d103b280c1c4d73110cfedc10ed7938a1c32",
+    "date": "2026-02-07T21:08:02-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "01d8675e13b82d4b74f5512dbb029e271933d13e",
+    "date": "2026-02-07T22:06:48-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "5af38a064f91eaa2d043f28e02e1f4c17cf0e6fb",
+    "date": "2026-02-07T23:21:25-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "bccfbefe0fb658c70203bf2790fc8883e8659b42",
+    "date": "2026-02-07T23:23:41-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "f55aadc3600201c4b1bbbe468b7c72cd97b04bf6",
+    "date": "2026-02-07T23:27:27-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "1f2de3922902e73077377146d73e80ebe6420550",
+    "date": "2026-02-07T23:35:30-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "e3858ccc66b53b708d800baf0f3ddb63b515eb8c",
+    "date": "2026-02-07T23:38:33-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "e0a7a62ef6da6d17e5d04463809c98dd1c3940e3",
+    "date": "2026-02-07T23:41:03-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "3ae33b9014576a6140f8a85b594d2ff835de6eec",
+    "date": "2026-02-08T15:43:08-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "f8449f5aedaff22ff5b5053d1e2f8e404723c6e0",
+    "date": "2026-02-08T15:47:24-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "b266d1cbc65f3f8b3640587061bb3687b5587d88",
+    "date": "2026-02-08T16:00:10-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "10351967c5dd44588fe1514c52a9bccbefaa7b8c",
+    "date": "2026-02-12T17:19:02-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "cefb2203fdc4165f9037100cdea9a1d4fb94fb7d",
+    "date": "2026-02-13T12:43:53-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "92f3b862f32a91bbddf4cbb9b9b29141036516f4",
+    "date": "2026-02-13T12:47:30-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "89056acb12a23378fa33b3cfd64898808e0467d0",
+    "date": "2026-02-15T15:56:24-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "95f010c165b5545cbee3caae4dcfb137ee82c67e",
+    "date": "2026-02-22T10:23:56-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "d15467d5cf158dabc017900b91b240663ac870d2",
+    "date": "2026-02-26T10:53:15-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "1a7ddb7bbc17c1707dd40dc743f4ff0dc6ab942b",
+    "date": "2026-03-03T13:15:58-05:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "b79e5b05bd41da78b7f813c2b49ca7e7de64a05c",
+    "date": "2026-03-20T10:24:49-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "fa5bdd7afa9c0401ea00cb7f37ea3628bc336b93",
+    "date": "2026-03-20T10:27:12-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "890ff7f046dc9e20198d3bb74739a3645a068b64",
+    "date": "2026-03-20T10:44:59-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "0d3c3275a3800ddf5fba1d724a0c37772dad0ed6",
+    "date": "2026-03-21T10:48:41-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "28c89057621cdc79d1b77756878399810d1d00b8",
+    "date": "2026-03-21T10:48:41-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "29084f5c239dc4640c4f2d81f27f5ff9e8dd2470",
+    "date": "2026-03-21T10:48:41-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "4d9cf6df13d25f86aa12135bb47df6ad2a775328",
+    "date": "2026-03-21T10:58:11-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "6ef3360b77843b89c62df6f9fb70ee064b871aaa",
+    "date": "2026-03-21T10:58:23-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "869ac5d82e1cba1dbf9485c8981fbeb0a96afb96",
+    "date": "2026-03-21T10:59:31-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "cd279d410abc121d399daae5616b13a726b611d5",
+    "date": "2026-03-21T10:59:35-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "724a2c41d6834ebef89b4fc72406d74a27ee1d26",
+    "date": "2026-03-23T07:17:14-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "a32785715d34fb465ad2b634ce6158bd82ae0a71",
+    "date": "2026-03-23T07:17:56-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "1d6448de9ecf7b203edaa45a173ba303b06c3d98",
+    "date": "2026-03-23T07:21:37-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "961ccdb1a22e314818ce5c67bb7de57e84874179",
+    "date": "2026-03-23T07:21:41-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "775c20ecc766c76f9efecfbc1e5bada1ba167cb1",
+    "date": "2026-04-17T06:46:22-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "ce6e231e7ed2ef11f00d8dc12c1c2cfdc13419a9",
+    "date": "2026-04-17T09:49:35-04:00",
+    "legacy_status": true,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "5d29b146c4cca5579ff98e53069e3232cd096587",
+    "date": "2026-04-23T19:01:01-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "404abbebcd52b664b7f74b1ef309c26e51351490",
+    "date": "2026-04-24T06:12:06-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": false
+  },
+  {
+    "commit": "0fe8cb84f61b1e44a0b87b98080a4ff3ebbdbdad",
+    "date": "2026-05-10T19:48:37-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "f20204305c3ee7bfa5cb0bb7a06e445f2a8bfbe6",
+    "date": "2026-05-13T17:14:27-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "1f46b3e8c05b9f6633f5e7a1cd00704e6e67d468",
+    "date": "2026-07-30T12:45:13-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "91b32432b1083b5c09fbf6e6e92da708ad58af3f",
+    "date": "2026-07-30T12:45:13-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "e8e03a26c12514ba119d02842fefc625fdd1a16c",
+    "date": "2026-07-30T12:45:13-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "298989146aaed4db9bde8d5df8520a6e74f69f7c",
+    "date": "2026-07-30T12:45:13-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "c7d24611274534c3e9758b34bff3716ee4a400a5",
+    "date": "2026-07-30T13:09:12-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "fab0bb8e63ee31149caf193a017b407848a2b3c8",
+    "date": "2026-07-30T13:11:43-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "66de1fb9c72323ce1f73ef213af0e13e6406f0ce",
+    "date": "2026-07-31T08:35:52-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "372b19f8e3747963456a6afb1220b633739134a8",
+    "date": "2026-07-31T09:16:26-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "6d5c23b101e07fd24b83909127ccdc13d84be7e8",
+    "date": "2026-07-31T11:56:06-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "97c8c195ca5597a4067e021233308082b345284a",
+    "date": "2026-07-31T11:59:05-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "b2bea49757f5ce0dfe1c5276dcec40c6983cee1c",
+    "date": "2026-08-04T07:32:02-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "111dbd5776d149d694c14d268360101c61954548",
+    "date": "2026-08-04T07:39:29-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "2cf331b12594fef768d1cbad23467b4c910e2706",
+    "date": "2026-08-12T21:38:17-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "6ba46567dde5861d6ac0a27cf605e2a25e786a40",
+    "date": "2026-08-12T21:45:35-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "09b4cc5f818bb495d20af56e447d5c4f3a632c7f",
+    "date": "2026-08-12T21:46:31-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "4d82bc8eb4ac1373026d78b6442cafb4f0806999",
+    "date": "2026-08-12T21:46:45-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "72704b40fb0923b1721d34fe77c6e4c05b1716e8",
+    "date": "2026-08-16T21:41:26-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "2f186a862d5e751e7661e2bb068ef9b969bacb26",
+    "date": "2026-08-16T21:41:48-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "648fb69b88938e2a5b8837ed9fcb7b617067d5e4",
+    "date": "2026-08-17T08:00:58-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "99e68a283d9e7a1874b768fb354eb9c769f1b9cd",
+    "date": "2026-08-17T08:01:33-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "7fc963ff5d80470abcacc74340bec43f49d7406f",
+    "date": "2026-08-17T20:31:43-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "8dc60e6c8ca77c01103afd7acacfb91d1d6ba625",
+    "date": "2026-08-17T20:31:57-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "e9f990aaf3355907115b27f09c683c7bceb7c495",
+    "date": "2026-08-17T21:08:50-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "e0359405b601ef97baddc0950d4a3f119877e72c",
+    "date": "2026-08-17T21:09:16-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "e7a5ac8475aa440b1e139c5a26ff06e1e63d6efa",
+    "date": "2026-08-17T21:20:40-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "04642155b6ff387efacfd9dd16cab5f8f469b99f",
+    "date": "2026-08-17T21:20:50-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "d10212a68d6622ccaacfbc64d126e7e3f7fe4104",
+    "date": "2026-08-18T09:33:06-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "c0fe00fde7e34f6c8a41c76169ca9e1f1292f9d0",
+    "date": "2026-08-18T09:33:16-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "8e6ffa5756d741ce33c83af41602f30597093d03",
+    "date": "2026-08-19T10:39:53-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "b42539102ee0818515184725ac569fa10b65f935",
+    "date": "2026-08-19T10:40:04-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "a391865f19c8a2ac71303365c0e18674f5f149d2",
+    "date": "2026-08-19T12:17:48-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "9a1849be8e2f13730aa5c75229a134c4ccd6d640",
+    "date": "2026-08-19T12:17:57-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "500348cee72b3a019db225eaf38b86c207c7c911",
+    "date": "2026-08-20T05:50:05-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "1e1c7b7e006ee2baf1e8865574413e8796700e4b",
+    "date": "2026-08-20T05:50:15-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "ff0233aa5e17172740bec46f5442079ab9b3b9d0",
+    "date": "2026-08-20T05:56:50-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "22a4a8fe79516a03e9094868e94306a1f8a39661",
+    "date": "2026-08-20T05:57:39-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "286ed258ed7a3b37b70b18ae3013d4e9dde9f18d",
+    "date": "2026-08-20T06:42:39-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "9430ffb773f89d499e5eaf9fe3d16cc734ef757a",
+    "date": "2026-08-20T06:42:57-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "6917305ee2ecc385d333267260823e7f6d277289",
+    "date": "2026-08-20T07:19:48-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "e3236ddeb5bf30f3d4ba1a8d7ea55aa4e059fa46",
+    "date": "2026-08-20T07:20:07-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "6407486fdf9aa82c409056bdefc15a9750e98135",
+    "date": "2026-08-20T12:03:54-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "7b3cfbfb5f72644d64c053cca170a162289ebdfe",
+    "date": "2026-08-20T12:04:25-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "ec42ee881625ff73ea8044c005f6681f99195022",
+    "date": "2026-08-22T12:12:02-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "71e7012e47ae911f43611140e66bb075f4829c10",
+    "date": "2026-08-22T12:12:32-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "b34c516be6e89b7be7c3f426c75b7f07fa99cc79",
+    "date": "2026-08-24T16:04:21-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "39b35515dc8c715a6c6e2fddb533a6f1e8b27b4b",
+    "date": "2026-08-24T16:35:12-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "efaa6100f2dbc4ed7d9826d287bb7ec34b88f22c",
+    "date": "2026-08-24T16:36:05-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "8bbfdfbf391b8055e1e2d9cc34b1dfc7b5d32e39",
+    "date": "2026-08-24T19:28:23-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "99e9aa39fe10944dc6ac2ef1f3ff11f3c5c74e42",
+    "date": "2026-08-24T19:29:00-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "58ec486894c28d2a6b6aaa20ce08c00f965a7bb5",
+    "date": "2026-08-27T06:11:46-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "37aa77d68002ff73de6ac07fe375c30a4c3e6664",
+    "date": "2026-08-27T06:12:05-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "f4b172fc4e581e23df385d9712411db75b502ab9",
+    "date": "2026-09-08T16:47:28-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "7b626f6bf971a7dc19684a7a4c2dac06f5461afc",
+    "date": "2026-09-08T16:47:37-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "711cffb4fc4f5e881467a09f5f63687e36f9e937",
+    "date": "2026-09-14T18:22:10-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "f5eb0367c576e3a612dc339c2d4f4f3d07783fb2",
+    "date": "2026-09-14T18:22:10-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "4d39e222debe454fa94a207556e1ecdee6cdbae6",
+    "date": "2026-09-14T19:05:34-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "c675a88ce20c0aea773b8e31caf4c6a962bbf370",
+    "date": "2026-09-14T19:05:55-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "d57600044d5cbde5562587ccd4829441fec1cb53",
+    "date": "2026-09-14T19:06:15-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "9c11d44bed4d9692c1b05dd0389a9aa4c4b634e8",
+    "date": "2026-09-16T20:34:08-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "c24279136353af081b49968dd0f7711412300a9f",
+    "date": "2026-09-16T20:44:02-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "8f3056a949b83d1d5f03312874e3075c80e04be5",
+    "date": "2026-09-16T21:03:09-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "0943a52bceb239c9e410f41f189c97bbb1b81244",
+    "date": "2026-09-17T09:07:39-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "0d67d145a5444b70a53061bb4ab00f0765cad245",
+    "date": "2026-09-17T09:08:00-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "f63f79f9616da5f81ec6a5f76a169a6995a92759",
+    "date": "2026-10-05T05:29:02-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "250a64eb52dd86bf6552ea396560629a18d60291",
+    "date": "2026-10-09T15:55:42-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  },
+  {
+    "commit": "6e5e2829540925ff1ab5fa6d0d365378818ed56e",
+    "date": "2026-10-11T17:53:02-04:00",
+    "legacy_status": false,
+    "banner_v2": true,
+    "boot_wifi_restore": true,
+    "max_uavs_32": true
+  }
+]

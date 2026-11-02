@@ -1,0 +1,23 @@
+# Copy to ~/.config/dronk/config.toml, chmod 600; do not put actual values here.
+# DEMO: no devices/network. CAPTURE: receivers only. LIVE: explicit mutual TLS.
+mode = "CAPTURE"
+# Keep stream labels and public aliases free of hardware identifiers.
+# legacy_namespace = "custom-stable-scope" # omit to preserve existing legacy UIDs
+
+[receivers]
+# front = "/dev/serial/by-id/REPLACE_WITH_RECEIVER"
+
+[expected_receivers]
+# front = "REPLACE_WITH_RAW_RECEIVER_ID" # internal association only
+
+[receiver_aliases]
+# front = "north" # published instead of raw factory ID; default is stream label
+
+[tak]
+forward_pilot_location = false # only affects outgoing CoT; local data is preserved
+host = "tak.example.invalid" # certificate DNS hostname, never an insecure override
+port = 8089
+connect_address = "" # optional alternate destination, e.g. 192.0.2.20
+client_p12 = "~/private-dronk/client.p12"
+ca_file = "~/private-dronk/ca.pem"
+password_file = "~/private-dronk/client-password"

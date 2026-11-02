@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+REPO_ROOT="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/../.." && pwd)"
+PROCESSOR="$REPO_ROOT/linux-bridge/build/install/linux-bridge/bin/linux-bridge"
+DEVICE_ID="303a:1001"
+LOG_ROOT="${OUITAK_LOG_ROOT:-${XDG_STATE_HOME:-$HOME/.local/state}/ouitak/logs}"
+# Safe diagnostic: exits before configuration, USB discovery or directory creation.
+if [[ "${1:-}" == "--print-log-dir" ]]; then
+  printf '%s\n' "$LOG_ROOT"
+  exit 0
+fi
+RETENTION_DAYS="${OUITAK_LOG_RETENTION_DAYS:-30}"
+
+say() { printf 'ouitak-live: %s\n' "$*" >&2; }
+fail() { say "$*"; exit 1; }
+
+[[ "$RETENTION_DAYS" =~ ^[0-9]+$ ]] && (( RETENTION_DAYS >= 1 && RETENTION_DAYS <= 3650 )) || \
+  fail "OUITAK_LOG_RETENTION_DAYS must be an integer from 1 to 3650 (default 30)."
+
+for command in lsusb udevadm readlink tee; do
+  command -v "$command" >/dev/null 2>&1 || fail "Required command '$command' is unavailable."
+done
+[[ -x "$PROCESSOR" ]] || fail "Bridge is not built. Run: ./gradlew :linux-bridge:installDist"
+# Settings come from private DRONK TOML/environment, never tracked defaults.
+# Validate before USB discovery; no credential contents or destinations are printed.
+python3 - "$REPO_ROOT" <<'CHECK_CONFIG'
+import sys
+sys.path.insert(0,sys.argv[1]+"/tools/dronk")
+from configuration import load_settings, validate_runtime
+try:
+    s=load_settings()
+    c={"mode":"LIVE","devices":{"legacy":"selected"},"expected":{},"forward_live":True}
+    for k,v in s['tak'].items(): c[{'host':'tak_host','port':'tak_port','connect_address':'tak_connect_address'}.get(k,k)]=v
+    validate_runtime(c)
+except ValueError:
+    print("LIVE requires complete private TAK configuration",file=sys.stderr);raise SystemExit(2)
+CHECK_CONFIG
+[[ $? == 0 ]] || fail "Configure private DRONK settings before LIVE use."
+
+usb_line="$(lsusb -d "$DEVICE_ID" 2>/dev/null || true)"
+[[ -n "$usb_line" ]] || fail "OUI-SPY ESP32-S3 ($DEVICE_ID) not detected by lsusb. Connect the receiver, then run ouitak-live again."
+
+declare -a matched_devices=()
+declare -A seen_nodes=()
+for candidate in /dev/serial/by-id/* /dev/ttyACM*; do
+  [[ -e "$candidate" ]] || continue
+  properties="$(udevadm info --query=property --name="$candidate" 2>/dev/null || true)"
+  grep -qx 'ID_VENDOR_ID=303a' <<<"$properties" || continue
+  grep -qx 'ID_MODEL_ID=1001' <<<"$properties" || continue
+  node="$(readlink -f "$candidate")"
+  [[ -n "$node" && -z "${seen_nodes[$node]:-}" ]] || continue
+  seen_nodes[$node]=1
+  # Prefer the stable by-id symlink so a CDC re-enumeration can be reopened.
+  if [[ "$candidate" == /dev/serial/by-id/* ]]; then
+    matched_devices=("$candidate" "${matched_devices[@]}")
+  else
+    matched_devices+=("$candidate")
+  fi
+done
+
+if (( ${#matched_devices[@]} == 0 )); then
+  fail "ESP32-S3 USB device is present, but no matching CDC serial port was found. Check its USB mode/cable and udev enumeration."
+fi
+if (( ${#matched_devices[@]} > 1 )); then
+  printf 'Matching ESP32-S3 serial ports:\n' >&2
+  fail "More than one matching port was found; disconnect other ESP32-S3 devices before retrying."
+fi
+device="${matched_devices[0]}"
+[[ -r "$device" ]] || fail "No read access to $device. Join its group (sudo usermod -aG uucp \$USER), then log out and back in."
+
+mkdir -p "$LOG_ROOT" || fail "Cannot create log directory $LOG_ROOT"
+chmod 0700 "$LOG_ROOT" || fail "Cannot secure log directory $LOG_ROOT"
+find "$LOG_ROOT" -maxdepth 1 -type f -name 'ouitak-live-*.log' -mtime "+$RETENTION_DAYS" -delete 2>/dev/null || \
+  fail "Could not apply log retention policy in $LOG_ROOT"
+timestamp="$(date -u +%Y%m%dT%H%M%SZ)"
+log_file="$LOG_ROOT/ouitak-live-$timestamp.log"
+(umask 077; : > "$log_file") || fail "Cannot create private log file $log_file"
+chmod 0600 "$log_file" || fail "Cannot secure log file $log_file"
+
+printf 'OUI-TAK live run started %s; receiver=selected; destination=privately configured\n' \
+  "$(date -u --iso-8601=seconds)" | tee -a "$log_file"
+say "Logging to $log_file (retention ${RETENTION_DAYS} days)."
+say "Press Ctrl-C to stop and flush parser state gracefully."
+
+/usr/bin/python3 "$REPO_ROOT/tools/milestone-0.8/linux_serial_bridge.py" \
+  --live --device "$device" \
+  --processor "$PROCESSOR" \
+  2>&1 | tee -a "$log_file"
+status=${PIPESTATUS[0]}
+printf 'OUI-TAK live run ended %s exit=%s\n' "$(date -u --iso-8601=seconds)" "$status" | tee -a "$log_file"
+exit "$status"

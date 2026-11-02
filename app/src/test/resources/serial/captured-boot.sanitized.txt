@@ -1,0 +1,37 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420c1316
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+E (236) esp_core_dump_flash: No core dump partition found!
+E (236) esp_core_dump_flash: No core dump partition found!
+
+
+========================================
+OUI SPY UNIFIED FIRMWARE v2.0
+========================================
+[OUI-SPY] Boot button not pressed
+[OUI-SPY] WiFi factory-reset complete - all stale config erased
+[OUI-SPY] Stored mode from NVS: 5
+========================================
+[OUI-SPY] *** BOOTING INTO FIRMWARE MODE 5 ***
+========================================
+[OUI-SPY] FINAL BOOT MODE: 5
+========================================
+
+[OUI-SPY] ========== ROUTING TO MODE ==========
+[OUI-SPY] About to switch on currentMode = 5
+[OUI-SPY] >>> STARTING SKY SPY (mode 5) <<<
+[OUI-SPY] No WiFi AP (BLE only)
+Buzzer initialized on GPIO3 (ON)
+Orange LED initialized on GPIO21 (inverted logic)
+E (2075) ledc: ledc_get_duty(745): LEDC is not initialized
+[SKY-SPY] *close encounters theme*
+[OUI-SPY] ========== MODE STARTED ==========
+
+{"   [+] Device is active and scanning..."}

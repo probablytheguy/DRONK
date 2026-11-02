@@ -1,0 +1,39 @@
+menu "OUI-TAK C5 receiver (receive only)"
+choice OUITAK_SCAN_MODE
+    prompt "Channel mode"
+    default OUITAK_SCAN_HOP
+    help
+        Hopping is the normal DRONK mode: anchors on channels 6 and 149 plus a
+        sweep of the supported US non-DFS channels. Fixed mode stays on
+        OUITAK_CHANNEL and is intended for diagnostics.
+config OUITAK_SCAN_HOP
+    bool "Automatic dual-band hopping"
+config OUITAK_SCAN_FIXED
+    bool "Fixed channel (diagnostics)"
+endchoice
+config OUITAK_CHANNEL
+    int "Fixed 20 MHz channel (fixed mode only)"
+    range 1 165
+    default 6
+    help
+        Supported: 1-11, 36/40/44/48, 149/153/157/161/165.
+        Driver regional policy must also allow the channel.
+config OUITAK_SCAN_DWELL_MS
+    int "Hopping dwell per channel visit (ms)"
+    range 50 2000
+    default 250
+config OUITAK_SCAN_HOT_TTL_S
+    int "Seconds a channel stays prioritized after a Remote ID candidate"
+    range 5 600
+    default 60
+config OUITAK_COUNTRY
+    string "Two-letter country code (verify for deployment)"
+    default "US"
+config OUITAK_RECEIVER_ID
+    string "Receiver ID override (empty uses factory base MAC)"
+    default ""
+config OUITAK_QUEUE_DEPTH
+    int "Maximum buffered management frames"
+    range 2 32
+    default 8
+endmenu

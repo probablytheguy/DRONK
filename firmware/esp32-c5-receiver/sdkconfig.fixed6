@@ -1,0 +1,3 @@
+# Optional diagnostic overlay: fixed channel 6 (normal builds hop).
+CONFIG_OUITAK_SCAN_FIXED=y
+CONFIG_OUITAK_CHANNEL=6

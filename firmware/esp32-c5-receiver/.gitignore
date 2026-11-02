@@ -1,0 +1,5 @@
+/build*/
+/sdkconfig
+/sdkconfig.old
+/tests/.build/
+/tests/__pycache__/

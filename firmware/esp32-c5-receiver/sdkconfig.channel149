@@ -1,0 +1,4 @@
+# Optional diagnostic overlay: fixed channel 149 (normal builds hop).
+# Use only where deployment regional policy permits channel 149.
+CONFIG_OUITAK_SCAN_FIXED=y
+CONFIG_OUITAK_CHANNEL=149

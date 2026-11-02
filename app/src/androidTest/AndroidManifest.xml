@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Framework test classes are optional shared libraries on Android 9+.
+         Compile-time useLibrary declarations do not load them into the test APK. -->
+    <application>
+        <uses-library android:name="android.test.runner" android:required="true" />
+        <uses-library android:name="android.test.base" android:required="true" />
+        <uses-library android:name="android.test.mock" android:required="true" />
+    </application>
+</manifest>
