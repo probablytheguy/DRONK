@@ -3,7 +3,7 @@
 **Drone Reconnaissance & Observation Network.** A passive receiver for drone Remote ID broadcasts, built around the ESP32-C5, that turns what it hears into TAK-compatible map data.
 
 > [!IMPORTANT]
-> DRONK is in active development. So far the software has only been tested against **synthetic data**. Nothing has been validated on real RF or in the field yet.
+> DRONK is in active development. The receiver and its dual-band channel scanning are now validated on real hardware, but Remote ID decoding has only been tested against **synthetic data**. DRONK has not yet detected a real aircraft.
 
 ## What it does
 
@@ -22,7 +22,7 @@ The aircraft data in each message (identity, position, altitude, speed) comes fr
 DRONK only listens.
 
 - It does not transmit to, interfere with, jam, spoof or take control of any aircraft.
-- The receiver listens on a fixed Wi-Fi channel. It doesn't join networks or send probes.
+- The receiver scans Wi-Fi channels passively on 2.4 GHz and 5 GHz. It doesn't join networks or send probes.
 - DRONK doesn't invent aircraft data. If a value wasn't in the broadcast, it isn't presented as if it were.
 
 Remote ID is a public broadcast intended to be received. Even so, check your local rules before deploying any RF receiver.
@@ -31,24 +31,29 @@ Remote ID is a public broadcast intended to be received. Even so, check your loc
 
 | Component | Role |
 |---|---|
-| ESP32-C5 development board with an external antenna | Remote ID receiver (2.4 GHz and 5 GHz Wi-Fi) |
+| Seeed XIAO ESP32-C5 with an external antenna | Remote ID receiver (2.4 GHz and 5 GHz Wi-Fi) |
 | Linux computer | Decodes, manages receivers, generates and forwards TAK data |
 
-The ESP32-C5 is a small, inexpensive chip that can receive on both 2.4 GHz and 5 GHz Wi-Fi. Whether it reliably receives Remote ID on both bands is one of the first questions hardware testing needs to answer.
+The ESP32-C5 is a small, inexpensive chip that can receive on both 2.4 GHz and 5 GHz Wi-Fi. Hardware testing has confirmed it receives ordinary Wi-Fi traffic on both bands. Receiving an actual Remote ID broadcast is the next thing to verify.
 
 ## Status
 
-| Capability | Implemented | Tested | Real RF validated |
+| Capability | Implemented | Tested | Real Remote ID validated |
 |---|:---:|:---:|:---:|
+| ESP32-C5 receiver firmware | ✓ | Real hardware | No |
+| 2.4 GHz and 5 GHz Wi-Fi reception | ✓ | Real hardware (ordinary Wi-Fi traffic) | No |
+| Automatic dual-band channel scanning (20 US channels) | ✓ | Real hardware: 743 channel switches in 186 s, 0 tuning errors, 0 resets | No |
+| Large Wi-Fi management frames (up to 2,332 bytes) | ✓ | Real hardware: largest frame seen 1,494 bytes, 0 dropped | No |
 | Remote ID decoding (Open Drone ID, versions 0 to 2) | ✓ | Synthetic data | No |
+| Detection without a usable position or ID, kept separate from map tracks | ✓ | Synthetic data; no false detections from ordinary Wi-Fi on real hardware | No |
 | Cursor-on-Target generation | ✓ | Synthetic data | No |
 | Multiple receivers at once | ✓ | Synthetic data | No |
-| Local status console | ✓ | Synthetic data | No |
+| Local status console with scan coverage | ✓ | Real receiver, with TAK forwarding off | No |
 | Forwarding to a TAK Server over TLS | ✓ | Synthetic data | No |
-| Bounded queues and hardened input handling | ✓ | Synthetic data | No |
-| ESP32-C5 receiver firmware | ✓ Builds | Not yet run on hardware | No |
-| 2.4 GHz and 5 GHz reception | Planned | | |
+| Bounded queues and hardened input handling | ✓ | Synthetic data and sanitizer tests | No |
+| First live Remote ID capture | Next | | |
 | Comparison against an independent receiver | Planned | | |
+| Bluetooth Remote ID | Planned | | |
 | Range and reliability field testing | Planned | | |
 
 **Synthetic data** means generated Remote ID test messages, not broadcasts captured from real aircraft.
@@ -64,7 +69,7 @@ These are intended uses, not tested deployments.
 ## Roadmap
 
 1. **Software foundation.** Done; tested with synthetic data.
-2. **Hardware bring-up.** Next: confirm the ESP32-C5 receives real Remote ID broadcasts.
+2. **Hardware bring-up.** In progress. The receiver, dual-band channel scanning and receiver diagnostics are verified on real hardware. Next: capture a real Remote ID broadcast.
 3. **Validation.** Compare decoded output against an independent capture.
 4. **Field testing.** Range, reliability and multiple receivers in real conditions.
 5. **Source release.** Publish the source after validation and a security review.
@@ -73,7 +78,7 @@ There are no dates. Each step depends on the testing before it.
 
 ## Background
 
-DRONK started with a simple question: could an existing OUI-SPY drone detector report what it sees directly to a TAK Server? That proof of concept was called OUI-TAK. Its limitations pushed the project toward its own receiver and host software, and that became DRONK.
+DRONK started with a simple question: could an existing OUI-SPY drone detector report what it sees directly to a TAK Server? That proof of concept was called OUI-TAK. From there the project moved to its own ESP32-C5 receiver and host software, and that became DRONK.
 
 ## Source code and license
 
